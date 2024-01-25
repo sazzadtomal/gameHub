@@ -1,6 +1,6 @@
 import { Grid,Show,GridItem } from '@chakra-ui/react'
 import Navbar from './Components/Navbar'
-import GameGrid from './Components/GmaeGrid'
+import GameGrid from './Components/GameGrid'
 function App() {
  
 
