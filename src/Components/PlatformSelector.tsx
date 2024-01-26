@@ -14,7 +14,6 @@ const PlatformSelector = ({onSelectedPlatform,selectedPlatform}:Props) => {
 
   const {data, error}=usePlatforms()
 
-  console.log(data)
 
   if(error) return null
 
