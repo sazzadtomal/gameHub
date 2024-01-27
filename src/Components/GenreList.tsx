@@ -18,7 +18,7 @@ const GenreList = ({onSelectGenre,selectedGenre}:Props) => {
    if(isLoading) return <Spinner/>
    
    return (
-    <List >{data.map(genre=><ListItem paddingY="5px" key={genre.id}>
+    <List>{data.map(genre=><ListItem paddingY="5px" key={genre.id}>
         <HStack>
             <Image boxSize='32px' borderRadius={8} src={getCroppedImageUrl(genre.image_background)}/>
             <Button fontWeight={genre.id===selectedGenre?.id ? "bold": "normal"} variant="link" onClick={()=>onSelectGenre(genre)} fontSize="lg">{genre.name}</Button>
